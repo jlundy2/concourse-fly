@@ -1,4 +1,4 @@
-FROM concourse/concourse:latest as cache
+FROM concourse/concourse:6.4.0 as cache
 
 FROM alpine:edge as downloader
 RUN apk add --no-cache curl jq
